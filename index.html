@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagen de Fondo con Texto Móvil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f0f0f0; /* Color de fondo */
+      }
+
+      .contenedor {
+        max-width: 700px;
+        max-height: 400px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .imagen-fondo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .texto-superpuesto {
+        position: absolute;
+        top: 41%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        color: green; /* Color del texto */
+        font-weight: 600;
+        font-size: 34px; /* Tamaño del texto */
+        text-align: center;
+        cursor: grab; /* Cambia el cursor a "agarre" para indicar que el elemento es arrastrable */
+        user-select: none; /* Evita la selección de texto durante el arrastre */
+      }
+      .texto-superpuesto2 {
+        position: absolute;
+        top: 49%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+        color: green; /* Color del texto */
+        font-weight: 600;
+        font-size: 20px; /* Tamaño del texto */
+        text-align: center;
+        cursor: grab; /* Cambia el cursor a "agarre" para indicar que el elemento es arrastrable */
+        user-select: none; /* Evita la selección de texto durante el arrastre */
+      }
+      .texto-superpuesto3 {
+        position: absolute;
+        top: 64%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        color: green; /* Color del texto */
+        font-size: 15px; /* Tamaño del texto */
+        text-align: justify;
+        cursor: grab; /* Cambia el cursor a "agarre" para indicar que el elemento es arrastrable */
+        user-select: none; /* Evita la selección de texto durante el arrastre */
+      }
+      .texto-superpuesto4 {
+        position: absolute;
+        top: 81%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        color: green; /* Color del texto */
+        font-size: 15px; /* Tamaño del texto */
+        text-align: justify;
+        cursor: grab; /* Cambia el cursor a "agarre" para indicar que el elemento es arrastrable */
+        user-select: none; /* Evita la selección de texto durante el arrastre */
+      }
+      .texto-superpuesto3 p {
+        line-height: 1.2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <img class="imagen-fondo" src="BIENVENIDA.jpg" alt="Imagen de fondo" />
+      <!-- Reemplaza 'ruta_de_la_imagen.jpg' con la URL o la ruta de tu imagen -->
+      <div class="texto-superpuesto" id="textoArrastrable">
+        <p>Bienvenidos</p>
+      </div>
+      <div class="texto-superpuesto2" id="textoArrastrable">
+        <p>Estimados aprendices</p>
+      </div>
+      <div class="texto-superpuesto3" id="textoArrastrable">
+        <p>
+          Mi nombre es <strong>Matthew Ruiz Meza</strong> y estaré<br />
+          con ustedes en la competencia de
+          <strong
+            >Uso de<br />
+            herramientas informáticas 'TIC'</strong
+          >. Nuestros<br />
+          encuentros serán los viernes de 1pm a 5pm
+        </p>
+      </div>
+      <div class="texto-superpuesto4" id="textoArrastrable">
+        <p>
+          ¡Los espero a todos! <br />
+          Cel: 3143769778 - maruiz983@misena.edu.co
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
